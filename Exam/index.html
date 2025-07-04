@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final-Exam</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-family-system-ui@0.0.1/index.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!---------- Header Section ---------->
+    <header>
+        <nav>
+            <img src="./Images/logo.png" alt="Logo" class="logo">
+            <h1>GrowSync</h1>
+            <div class="ul-left">
+                <ul>
+                    <li><a href="#">Home</a> |</li>
+                    <li><a href="#">About</a> |</li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!---------- Main Section ---------->
+    <main>
+        <!---------- First Section ---------->
+        <section class="home-content">
+            <div class="container">
+                <div class="text-left">
+                    <h1>We offer modern solutions for growing your business</h1>
+                    <h2>We are team of talented designers making websites</h2>
+                    <button type="button" id="changeBG-Cover" onmouseout="changeBG(this)" onmouseover="colorBGChange(this)">Get Started <i class="margin-me fa-solid fa-arrow-right"></i></button>
+                </div>
+                <img src="./Images/hero-img.png" alt="hero-img">
+            </div>
+        </section>
+
+        <hr>
+
+        <!---------- Second Section ---------->
+        <section class="inside">
+            <div class="container ">
+                <div class="text-left box">
+                    <h1 id="switch-title">Who we are</h1>
+                    <p id="switch-desc">We are a forward-thinking company dedicated to providing innovative solutions that fuel business growth. 
+                        With a focus on modern technologies and strategic insights, 
+                        we help businesses streamline their operations, enhance customer experiences, 
+                        and scale efficiently. Whether you're looking to improve your digital presence, 
+                        optimize processes, 
+                        or drive new revenue streams.
+                    </p>
+                    <button type="button" onclick="switchItems()" id="switch-btn">Make A Change</button>
+                </div>
+                <img src="./Images/about.jpg" alt="about" class="box-img" id="switch-img">
+            </div>
+        </section>
+
+        <hr>
+
+        <!---------- Third Section ---------->
+        <section class="button-sec">
+            <div class="upserv container box2">
+                <h1>Our Services</h1>
+                <button class="btn" onclick="addNew(this)">Add Service</button>
+            </div>
+            <div class="services">
+                <div class="block1">
+                    <img src="./Images/values-2.png" alt="values-2">
+                    <p>We provide modern, technology-driven solutions tailored
+                        to help you adapt, compete and thrive in an ever-evolving market.
+                    </p>
+                </div>
+                <div class="block2">
+                    <img src="./Images/values-1.png" src="./Images/features.png" alt="values-1">
+                    <p>Whether you are a starup or an established enterpriced,
+                        we focus on <span> scalble and flexible tools </span> that <u>support</u> growth 
+                        at every stage.
+                    </p>
+                </div>
+                <div class="block3">
+                    <img src="./Images/values-3.png" alt="values-3">
+                    <p>Our services designed to meet the unique challenges of today
+                        while positioning you for tommorow's opportunites.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
